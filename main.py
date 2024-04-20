@@ -113,12 +113,3 @@ class S3CachedFolder(CachedFolder):
 
     def name(self) -> str:
         return os.path.join(self._bucket, self._path)
-
-
-s3_folder: S3CachedFolder = S3CachedFolder(bucket='smart-mask-old', path='study-1.0/raw-data/subject-10')
-
-for sub_folder in s3_folder.get_folders():
-    print(sub_folder.name())
-
-for file in s3_folder.get_folders()[0].get_files():
-    print(file.name())
