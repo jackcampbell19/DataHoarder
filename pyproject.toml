@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "DataHoarder"
+version = "0.0.2"
+authors = [
+  { name="Jack Campbell", email="jackcampbell19@gmail.com" },
+]
+description = "This project allows people to pull and cache files from different sources."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jackcampbell19/DataHoarder"
+"Bug Tracker" = "https://github.com/jackcampbell19/DataHoarder/issues"
